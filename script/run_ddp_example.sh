@@ -22,12 +22,11 @@ python -m torch.distributed.launch --master_port 50130 --nproc_per_node=8 --use_
                                    --threshold 0.7 \
                                    --semi-lambda 4.0 \
                                    --evaluate-freq 4 \
-                                   --semi-start-epoch 0 \
+                                   --semi-start-epoch 30 \
                                    --mixup 0.0 \
                                    --cutmix 0.0 \
                                    --no-repeated-aug \
                                    --pseudo-type cnn \
-                                   --unlabel-smooth \
                                    --output_dir ${OUTPUT} \
 
 

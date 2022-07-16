@@ -12,13 +12,13 @@ The main framework of the Semiformer is shown as following:
 
 ![](figures/semiformer_framework.png)
 
-# Getting started
+# Dependent Packages
 
 PyTorch 1.7.0+ and torchvision 0.8.1+ and [pytorch-image-models 0.3.2](https://github.com/rwightman/pytorch-image-models)
 
 # Log and Checkpoint downloaded
 
-You can download the log file and the checkpoint file from the following links:
+The best performance of semiformer in 10%-ImageNet SSL learning is 75.5%. We upload the training log and the corresponding checkpoint, which can be downloaded through the following links:
 
 - log: https://drive.google.com/file/d/1oR2e1AP-luOGPPoKWiR03sYE7kTMWdqZ/view?usp=sharing
 - checkpoint: https://drive.google.com/file/d/1iWqgVMea9hlU-lBEMsGT-sptFR-PwPr2/view?usp=sharing
@@ -43,7 +43,7 @@ Download and extract ImageNet train and val images from http://image-net.org/. T
 
 # Evaluation
 
-Download the [checkpoint](https://drive.google.com/file/d/1iWqgVMea9hlU-lBEMsGT-sptFR-PwPr2/view?usp=sharing) and evaluate the model by the script **"/script/eval.sh"**. You will get the 75.5 Top1 Accuracy. Training process is recorded [here](https://drive.google.com/file/d/1oR2e1AP-luOGPPoKWiR03sYE7kTMWdqZ/view?usp=sharing). 
+Download the [checkpoint](https://drive.google.com/file/d/1iWqgVMea9hlU-lBEMsGT-sptFR-PwPr2/view?usp=sharing) and evaluate the model by the script **"/script/eval.sh"**. You will get the 75.5% Top1 Accuracy. Training process is recorded [here](https://drive.google.com/file/d/1oR2e1AP-luOGPPoKWiR03sYE7kTMWdqZ/view?usp=sharing). 
 
 ```bash
 # set $ROOT as the project root path
