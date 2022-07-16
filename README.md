@@ -72,7 +72,7 @@ python -m torch.distributed.launch --master_port 50131 --nproc_per_node=1 --use_
 
 Training scripts of Semiformer are provided in **/script/submitit_Semiformer_*.sh** using submitit. 
 
-You can also train the model in a simple ddp mannor, referring to the DDP script example provided in /script/run_ddp_example.sh. 
+You can also train the model directly using DDP without submitit, referring to the DDP script example provided in /script/run_ddp_example.sh. 
 
 # Citation
 
