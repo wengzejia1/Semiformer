@@ -77,6 +77,11 @@ You can also train the model directly using DDP without submitit, referring to t
 # Citation
 
 ```
--
+@article{weng2021semi,
+  title={Semi-supervised vision transformers},
+  author={Weng, Zejia and Yang, Xitong and Li, Ang and Wu, Zuxuan and Jiang, Yu-Gang},
+  journal={arXiv preprint arXiv:2111.11067},
+  year={2021}
+}
 ```
 
