@@ -10,7 +10,7 @@ We introduce a joint semi-supervised learning framework, **Semiformer**, which c
 
 The main framework of the Semiformer is shown as following:
 
-![](figures/semiformer_framework.pdf)
+![](figures/semiformer_framework.png)
 
 # Getting started
 
