@@ -173,8 +173,6 @@ def get_args_parser():
     parser.add_argument('--start_epoch', default=0, type=int, metavar='N',
                         help='start epoch')
     parser.add_argument('--eval', action='store_true', help='Perform evaluation only')
-    parser.add_argument('--eval-ckpt', default='temp.pth', type=str,
-                        help='evaluation chekcpoint path')
     parser.add_argument('--num_workers', default=10, type=int)
     parser.add_argument('--pin-mem', action='store_true',
                         help='Pin CPU memory in DataLoader for more efficient (sometimes) transfer to GPU.')
@@ -569,13 +567,6 @@ def main(args):
                 utils._load_checkpoint_for_ema(model_ema, checkpoint['model_ema'])
         
     if args.eval:
-        """
-        print(args.eval_ckpt)
-        if not os.path.exists(args.eval_ckpt):
-            print("non-existed path")
-        checkpoint = torch.load(args.eval_ckpt, map_location='cpu')
-        model_without_ddp.load_state_dict(checkpoint['model'])
-        """
         test_stats = evaluate(data_loader_val, model, device, amp_autocast=amp_autocast,)
         print(f"Accuracy of the network on the {len(dataset_val)} test images: {test_stats['acc1']:.1f}%")
         return
