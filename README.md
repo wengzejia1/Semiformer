@@ -19,16 +19,16 @@ The directory structure of ImageNet is expected as:
 
 ```
 /path/to/imagenet
-	/train
-		/c1
-    /c2
+  train/
+    c1/
+    c2/
     ...
-    /c1000
-	/val
-		/c1
-		/c2
-		...
-		/c1000
+    c1000/
+  val/
+    c1/
+    c2/
+    ...
+    c1000/
 ```
 
 # Evaluation
@@ -36,7 +36,9 @@ The directory structure of ImageNet is expected as:
 You can download the checkpoint file and evaluate the model by the script "eval.sh" in the /script folder. You will get the 75.5 Top1 Accuracy.
 
 ```
-# set the $ROOT as the project root path, $DATA_ROOT as the INet path, $RESUME_PATH as the downloaded checkpoint path
+# set $ROOT as the project root path
+# set $DATA_ROOT as the INet path 
+# SET $RESUME_PATH as the downloaded checkpoint path
 bash eval.sh
 ```
 
