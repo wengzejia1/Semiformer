@@ -1,9 +1,5 @@
 # Semiformer: Semi-Supervised Vision Transformers
 
-**Accepted to ECCV 2022!**
-
-This repository is built upon [DeiT](https://github.com/facebookresearch/deit), [Conformer](https://github.com/pengzhiliang/Conformer), and [timm](https://github.com/rwightman/pytorch-image-models).
-
 # Introduction
 
 We introduce a joint semi-supervised learning framework, **Semiformer**, which contains a transformer stream, a convolutional stream and a carefully designed fusion module for knowledge sharing between these streams. **The convolutional stream is trained on limited labeled data and further used to generate pseudo labels to supervise the training of the transformer stream on unlabeled data.** 
@@ -77,11 +73,11 @@ You can also train the model directly using DDP without submitit, referring to t
 # Citation
 
 ```
-@article{weng2021semi,
+@inproceedings{weng2022semi,
   title={Semi-supervised vision transformers},
   author={Weng, Zejia and Yang, Xitong and Li, Ang and Wu, Zuxuan and Jiang, Yu-Gang},
-  journal={arXiv preprint arXiv:2111.11067},
-  year={2021}
+  booktitle={ECCV},
+  year={2022}
 }
 ```
 
