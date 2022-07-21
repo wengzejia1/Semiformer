@@ -1,5 +1,11 @@
 # Semiformer: Semi-Supervised Vision Transformers
 
+**This repository contains the official Pytorch implementation of our paper: "Semiformer: Semi-Supervised Vision Transformers (ECCV 2022, Poster)"**
+
+Zejia Weng, Xitong Yang, Ang Li,  Zuxuan Wu, Yu-Gang Jiang
+
+ [[Paper]](https://arxiv.org/abs/2111.11067) [[Supp]]()
+
 # Introduction
 
 We introduce a joint semi-supervised learning framework, **Semiformer**, which contains a transformer stream, a convolutional stream and a carefully designed fusion module for knowledge sharing between these streams. **The convolutional stream is trained on limited labeled data and further used to generate pseudo labels to supervise the training of the transformer stream on unlabeled data.** 
@@ -70,7 +76,7 @@ Training scripts of Semiformer are provided in **/script/submitit_Semiformer_*.s
 
 You can also train the model directly using DDP without submitit, referring to the DDP script example provided in /script/run_ddp_example.sh. 
 
-# Acknowledge
+# Acknowledgement
 
 This repository is built upon [DeiT](https://github.com/facebookresearch/deit), [Conformer](https://github.com/pengzhiliang/Conformer), and [timm](https://github.com/rwightman/pytorch-image-models). Thanks for those well-organized codebases.
 
