@@ -70,6 +70,10 @@ Training scripts of Semiformer are provided in **/script/submitit_Semiformer_*.s
 
 You can also train the model directly using DDP without submitit, referring to the DDP script example provided in /script/run_ddp_example.sh. 
 
+# Acknowledge
+
+This repository is built upon [DeiT](https://github.com/facebookresearch/deit), [Conformer](https://github.com/pengzhiliang/Conformer), and [timm](https://github.com/rwightman/pytorch-image-models). Thanks for those well-organized codebases.
+
 # Citation
 
 ```

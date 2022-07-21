@@ -15,7 +15,7 @@ import submitit
 def parse_args():
     classification_parser = classification.get_args_parser()
 
-    parser = argparse.ArgumentParser("Submitit for Conformer-Explore", parents=[classification_parser])
+    parser = argparse.ArgumentParser("Submitit for Semiformer", parents=[classification_parser])
     parser.add_argument("--ngpus", default=8, type=int, help="Number of gpus to request on each node")
     parser.add_argument("--nodes", default=1, type=int, help="Number of nodes to request")
     parser.add_argument("--timeout", default=2800, type=int, help="Duration of the job")
@@ -38,7 +38,7 @@ def get_shared_folder(args) -> Path:
         p = Path(args.shared_folder)
     else:
         user = os.getenv("USER")
-        p = Path(f"/checkpoint/{user}/experiments/Conformer_Explore")
+        p = Path(f"/checkpoint/{user}/experiments/Semiformer")
     # print(args.shared_folder)
     if Path(p).is_dir():
         p.mkdir(exist_ok=True)
@@ -135,7 +135,7 @@ def main():
         **kwargs
     )
 
-    executor.update_parameters(name="conformer")
+    executor.update_parameters(name="semiformer")
 
     args.dist_url = get_init_file(args).as_uri()
     args.output = args.job_dir
