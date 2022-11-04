@@ -15,7 +15,7 @@ python -m torch.distributed.launch --master_port 50130 --nproc_per_node=8 --use_
                                    --lr 0.001 \
                                    --num_workers 4 \
                                    --data-path $DATA_ROOT \
-                                   --epochs 300 \
+                                   --epochs 600 \
                                    --data-split-file $ROOT/data_splits/files2shards_train_size128116_split1.txt \
                                    --mu 0.125 \
                                    --temperature 1.0 \
@@ -28,5 +28,6 @@ python -m torch.distributed.launch --master_port 50130 --nproc_per_node=8 --use_
                                    --no-repeated-aug \
                                    --pseudo-type cnn \
                                    --output_dir ${OUTPUT} \
+                                   --unlabel-smooth \
 
 
